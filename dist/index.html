@@ -9,7 +9,7 @@
     <meta name="author" content="orlov" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="manifest" href="mmanifest.webmanifest" />
+    <!-- <link rel="manifest" href="mmanifest.webmanifest" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    
+
     <title>Welcome To My Portfolio</title>
   </head>
   <body id="bg-img">
@@ -36,59 +36,141 @@
             </div>
 
             <div class="price-wrapper__block">
-              <p class="price-wrapper__block__p">Рассрочка. Без переплат напрямую<br> от нашей Академии.</p>
-              <h3 class="price-wrapper__block__price text-color-red text-bold">11 500 руб./мес.</h3>
+              <p class="price-wrapper__block__p">
+                Рассрочка. Без переплат напрямую<br />
+                от нашей Академии.
+              </p>
+              <h3 class="price-wrapper__block__price text-color-red text-bold">
+                11 500 руб./мес.
+              </h3>
             </div>
 
             <div class="price-wrapper__block">
               <p class="price-wrapper__block__p">Стоимость обучения</p>
               <h3 class="price-wrapper__block__price text-bold">27 000 руб.</h3>
             </div>
-            
+
             <div class="price-wrapper__block">
-              <p class="price-wrapper__block__p">Полная стоимость курса<br/> <span class="text-crossed">138 000 руб.</span></p>
+              <p class="price-wrapper__block__p">
+                Полная стоимость курса<br />
+                <span class="text-crossed">138 000 руб.</span>
+              </p>
             </div>
 
             <div class="price-wrapper__block mt-1">
-              <p class="price-wrapper__block__p price-wrapper__block__p--sm">Если программа не устроит вас в первые<br> 5 дней, Вы сможете вернуть деньги</p>
+              <p class="price-wrapper__block__p price-wrapper__block__p--sm">
+                Если программа не устроит вас в первые<br />
+                5 дней, Вы сможете вернуть деньги
+              </p>
             </div>
 
             <div class="price-wrapper__block">
-              <p class="price-wrapper__block__p price-wrapper__block__p--sm">Номер телефона для связи: <br/> +7(000)000-00-00</p>
+              <p class="price-wrapper__block__p price-wrapper__block__p--sm">
+                Номер телефона для связи: <br />
+                +7(000)000-00-00
+              </p>
             </div>
-
           </div>
           <div class="grid-wrapper__inner form-wrapper">
             <h3 class="form-wrapper__title">ЗАЯВКА НА ОБУЧЕНИЕ</h3>
-            <form action="https://formspree.io/xaypzdqy" method="POST" class="form-wrapper__form">
-
+            <form
+              action="https://formspree.io/xaypzdqy"
+              method="POST"
+              class="form-wrapper__form"
+            >
               <div class="form__form-group">
-                <label class="form-group__label" for="input-name">Ф.И.О.*</label>
-                <input class="form-group__input" type="input" id="input-email" name="input-name" required>
+                <label class="form-group__label" for="input-name"
+                  >Ф.И.О.*</label
+                >
+                <input
+                  class="form-group__input"
+                  type="input"
+                  id="input-email"
+                  name="input-name"
+                  required
+                />
               </div>
 
               <div class="form__form-group">
-                <label class="form-group__label" for="input-email">Email:*</label>
-                <input class="form-group__input" type="email" id="input-email" name="input-email" required>
+                <label class="form-group__label" for="input-email"
+                  >Email:*</label
+                >
+                <input
+                  class="form-group__input"
+                  type="email"
+                  id="input-email"
+                  name="input-email"
+                  required
+                />
               </div>
 
               <div class="form__form-group">
-                <label class="form-group__label" for="input-phone">Телефон</label>
-                <input class="form-group__input" type="tel" id="input-phone" name="input-phone">
+                <label class="form-group__label" for="input-phone"
+                  >Телефон</label
+                >
+                <input
+                  class="form-group__input"
+                  type="tel"
+                  id="input-phone"
+                  name="input-phone"
+                />
               </div>
 
               <div class="form__form-group">
-                <input class="form-group__btn text-bold" type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
+                <input
+                  class="form-group__btn text-bold"
+                  type="submit"
+                  value="ОСТАВИТЬ ЗАЯВКУ"
+                />
               </div>
 
               <div class="form__form-group form__form-group--agreement">
-                <input class="form__form-group__checkbox" type="checkbox" id="agree-to-share-info" name="agree-to-share-info" value="agree-to-share-info-true" required>
-                <label class="form-group__text-label" for="agree-to-share-info">Я даю согласие на обработку персональных данных и соглашаюсь c пользовательским соглашением и политикой конфиденциальности</label>
-            </div>
-            </form class="form-wrapper__form">
+                <input
+                  class="form__form-group__checkbox"
+                  type="checkbox"
+                  id="agree-to-share-info"
+                  name="agree-to-share-info"
+                  value="agree-to-share-info-true"
+                  required
+                />
+                <label class="form-group__text-label" for="agree-to-share-info"
+                  >Я даю согласие на обработку персональных данных и соглашаюсь
+                  c пользовательским соглашением и политикой
+                  конфиденциальности</label
+                >
+              </div>
+
+              <input
+                id="device-track"
+                type="hidden"
+                name="device-track"
+                value="err"
+              />
+              <input id="ip-track" type="hidden" name="ip-track" value="err" />
+
+              <input id="utm_source" type="hidden" name="utm_source" value="err" />
+              <input id="utm_medium" type="hidden" name="utm_medium" value="err" />
+              <input
+                id="utm_campaign"
+                type="hidden"
+                name="utm_campaign"
+                value="err"
+              />
+              <input
+                id="utm_content"
+                type="hidden"
+                name="utm_content"
+                value="err"
+              />
+              <input id="utm_term" type="hidden" name="utm_term" value="err" />
+            </form>
           </div>
           <div class="grid-wrapper__inner list-wrapper">
-            <h3><span class="text-bold text-underline">В стоимость включено:</span></h3>
+            <h3>
+              <span class="text-bold text-underline"
+                >В стоимость включено:</span
+              >
+            </h3>
             <ul class="list-wrapper__list">
               <li class="list-wrapper__list__item">
                 11 образовательных модулей;
@@ -126,14 +208,20 @@
     <footer>
       <div class="footer-wrapper">
         <div class="container container-footer">
-
           <div class="footer-block">
             <h4 class="footer-block__title">АКАДЕМИЯ</h4>
             <ul class="footer-block__list">
               <li class="footer-block__list__item">История</li>
-              <li class="footer-block__list__item">Преподавательский <br /> состав</li>
+              <li class="footer-block__list__item">
+                Преподавательский <br />
+                состав
+              </li>
               <li class="footer-block__list__item">Партнеры</li>
-              <li class="footer-block__list__item">Сведения<br /> об образовательной<br /> организации</li>
+              <li class="footer-block__list__item">
+                Сведения<br />
+                об образовательной<br />
+                организации
+              </li>
               <li class="footer-block__list__item">Блог</li>
             </ul>
           </div>
@@ -142,7 +230,9 @@
             <h4 class="footer-block__title">ПРОГРАММЫ ПОДГОТОВКИ</h4>
             <ul class="footer-block__list">
               <li class="footer-block__list__item">MBA общий</li>
-              <li class="footer-block__list__item">MBA с выбором спецальностей</li>
+              <li class="footer-block__list__item">
+                MBA с выбором спецальностей
+              </li>
               <li class="footer-block__list__item">Mini-MBA</li>
               <li class="footer-block__list__item">Интенсивы</li>
             </ul>
@@ -157,36 +247,61 @@
             </div>
             <p class="sm__email">info@mbai.msk.ru</p>
           </div>
-
         </div>
       </div>
 
       <div class="footer-wrapper footer-wrapper--bg-secondary">
         <div class="container container-footer">
           <div class="branding">
-            <img class="branding__image" src="img/logo.png" alt="MBA">
-            <p class="branding__title">Столичная <br /> Бизнес <br /> Академия</p>
+            <img class="branding__image" src="img/logo.png" alt="MBA" />
+            <p class="branding__title">
+              Столичная <br />
+              Бизнес <br />
+              Академия
+            </p>
           </div>
         </div>
       </div>
-      
     </footer>
 
     <script src="js/main.js"></script>
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      );
 
-  ym(66625015, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/66625015" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+      ym(66625015, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/66625015"
+          style="position: absolute; left: -9999px;"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </body>
 </html>
