@@ -10,48 +10,46 @@ fetch('https://api.ipify.org/?format=json')
     document.getElementById('ip-track').value = user_ip;
   });
 
-  
-
-
 // UTM params
-// let utmQuery = decodeURIComponent(window.location.search.substring(1)),
-//   utmVariables = utmQuery.split('&'),
-//   ParameterName,
-//   i;
 
-// const getUTMValue = (inputParameter) => {
-//   for (i = 0; i < utmVariables.length; i++) {
-//     ParameterName = utmVariables[i].split('=');
-//     if (ParameterName[0] === inputParameter) {
-//       return ParameterName[1] === null ? null : ParameterName[1];
-//     }
-//   }
-// };
+let utmQuery = decodeURIComponent(window.location.search.substring(1)),
+  utmVariables = utmQuery.split('&'),
+  ParameterName,
+  i;
 
-// const valueExists = (value) => {
-//   return value != null && value != '' && value != undefined;
-// };
+const getUTMValue = (inputParameter) => {
+  for (i = 0; i < utmVariables.length; i++) {
+    ParameterName = utmVariables[i].split('=');
+    if (ParameterName[0] === inputParameter) {
+      return ParameterName[1] === null ? null : ParameterName[1];
+    }
+  }
+};
 
-// const utmParams = [
-//   'utm_source',
-//   'utm_medium',
-//   'utm_campaign',
-//   'utm_content',
-//   'utm_term',
-// ];
+const valueExists = (value) => {
+  return value != null && value != '' && value != undefined;
+};
 
-// utmParams.forEach((param) => {
-//   var pValue = getUTMValue(param);
+const utmParams = [
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_content',
+  'utm_term',
+];
 
-//   if (valueExists(pValue)) {
-//     Cookies.set(param, pValue, {
-//       domain: cookieDomain,
-//       expires: 90,
-//     });
-//   }
-//   let cValue = Cookies.get(param);
-//   let input = document.getElementById(param);
-//   if (input && valueExists(cValue)) {
-//     input.value = cValue;
-//   }
-// });
+utmParams.forEach((param) => {
+  var pValue = getUTMValue(param);
+
+  if (valueExists(pValue)) {
+    Cookies.set(param, pValue, {
+      domain: cookieDomain,
+      expires: 90,
+    });
+  }
+  let cValue = Cookies.get(param);
+  let input = document.getElementById(param);
+  if (input && valueExists(cValue)) {
+    input.value = cValue;
+  }
+});

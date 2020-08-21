@@ -137,7 +137,7 @@ main {
 
 .grid-wrapper {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 1rem;
   grid-template-areas:
     'price form'
     'benefits benefits';
