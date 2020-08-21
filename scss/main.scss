@@ -1,5 +1,16 @@
 @import 'config';
 
+textarea,
+input.text,
+input[type='text'],
+input[type='button'],
+input[type='submit'],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -217,6 +228,8 @@ main {
   box-shadow: none;
   border: none;
   margin-top: 0.2rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
 }
 
 .form-group__label {
@@ -233,6 +246,7 @@ main {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 0.9375rem;
+  cursor: pointer;
 }
 
 .form-group__text-label {
@@ -292,9 +306,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .footer-block__list {
