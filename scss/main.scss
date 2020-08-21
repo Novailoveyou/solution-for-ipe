@@ -175,6 +175,7 @@ main {
 
 .price-wrapper__discount {
   background: $secondary-color;
+  max-width: 100%;
   box-shadow: 5px 10px rgba(52, 52, 52, 0.9);
   transform: translateY(-1rem);
   padding-left: 3.3rem;

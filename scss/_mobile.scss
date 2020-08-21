@@ -52,8 +52,14 @@
   }
 
   .price-wrapper__discount {
-    padding-left: 0;
-    box-shadow: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .price-wrapper__block__triangle {
+    transform: translate(-1.4rem, -1.01rem);
   }
 
   .price-wrapper__block__price {
