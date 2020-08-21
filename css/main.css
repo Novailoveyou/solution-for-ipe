@@ -149,6 +149,7 @@ main {
 
 .price-wrapper__discount {
   background: #b32734;
+  max-width: 100%;
   box-shadow: 5px 10px rgba(52, 52, 52, 0.9);
   transform: translateY(-1rem);
   padding-left: 3.3rem;
@@ -311,8 +312,12 @@ footer {
     padding-right: 0.1rem;
     text-align: center; }
   .price-wrapper__discount {
-    padding-left: 0;
-    box-shadow: none; }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 90%;
+    margin: 0 auto; }
+  .price-wrapper__block__triangle {
+    transform: translate(-1.4rem, -1.01rem); }
   .price-wrapper__block__price {
     font-size: 2rem; }
   h1.lg-heading {
