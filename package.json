@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "test's solution for ipo",
   "main": "index.html",
-  "homepage": "https://novailoveyou.github.io/solution-for-ipe",
+  "homepage": "https://novailoveyou.github.io/solution-for-ipe/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
