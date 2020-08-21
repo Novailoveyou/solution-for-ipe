@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  min-height: 100%; }
+
+body {
+  background: #242424;
+  color: #fff;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'GothamPro-Black', sans-serif;
+  line-height: 1.4; }
+  body#bg-img {
+    background: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(36, 36, 36, 0.86); }
+
+p {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.mt-1 {
+  margin-top: 2rem; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.3; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 3.4375rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(41, 41, 41, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+.text-secondary {
+  color: #b32734; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 3.75em); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem;
+      color: #fff;
+      transition: all 0.5s ease-in-out; }
+      main .icons a:hover {
+        color: #b32734; }
+  main#home {
+    overflow: hidden;
+    min-height: 100vh; }
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover {
+    background: #b32734;
+    color: #000; }
+
+.text-color-red {
+  color: #b32734; }
+
+.text-bold {
+  font-weight: 900; }
+
+.text-crossed {
+  text-decoration: line-through; }
+
+.text-underline {
+  text-decoration: underline; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.bg-red {
+  background-color: #b32734; }
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'price form' 'benefits benefits';
+  grid-template-columns: repeat(2, 1fr); }
+
+.price-wrapper {
+  grid-area: price; }
+
+.form-wrapper {
+  grid-area: form; }
+
+.list-wrapper {
+  grid-area: benefits; }
+
+.grid-wrapper__inner {
+  border: 2px solid rgba(210, 210, 210, 0.3);
+  background-color: rgba(210, 210, 210, 0.04);
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: relative; }
+
+.price-wrapper__block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.price-wrapper__discount {
+  background: #b32734;
+  box-shadow: 5px 10px rgba(52, 52, 52, 0.9);
+  transform: translateY(-1rem);
+  padding-left: 3.3rem;
+  position: relative; }
+
+.price-wrapper__block__triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 0.9rem solid transparent;
+  border-right: 0.9rem solid transparent;
+  border-bottom: 0.9rem solid #b32734;
+  transform: translate(-4.2rem, -1rem); }
+
+.price-wrapper__block__p {
+  font-size: 1.4375rem; }
+  .price-wrapper__block__p--sm {
+    font-size: 1.1875rem; }
+
+.price-wrapper__block__price {
+  font-size: 2.6875rem; }
+
+.form-wrapper {
+  background-color: #b32734;
+  align-items: center; }
+
+.form-wrapper__title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem; }
+
+.form__form-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column; }
+
+.form-group__input {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  box-shadow: none;
+  border: none;
+  margin-top: 0.2rem; }
+
+.form-group__label {
+  font-size: 0.9375rem; }
+
+.form-group__btn {
+  display: block;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background: #313131;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.9375rem; }
+
+.form-group__text-label {
+  font-size: 0.75rem; }
+
+.form__form-group--agreement {
+  flex-direction: row; }
+
+.form__form-group__checkbox {
+  margin-right: 0.8rem; }
+
+.list-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+ul.list-wrapper__list {
+  list-style: none;
+  margin-top: 1rem; }
+
+.list-wrapper__list__item {
+  padding-bottom: 1rem;
+  font-size: 1.25rem; }
+  .list-wrapper__list__item::before {
+    content: '\2022';
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+
+footer {
+  background-color: #313131;
+  color: #fff; }
+
+.footer-wrapper {
+  padding: 1rem; }
+  .footer-wrapper--bg-secondary {
+    background-color: #b32734; }
+
+.footer-block {
+  max-width: 20rem;
+  margin-right: 3rem; }
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .container-footer:last-child {
+    margin-right: 0; }
+
+.footer-block__list {
+  padding-left: 1.5rem; }
+
+.footer-block__list__item {
+  margin-bottom: 0.3rem; }
+
+.sm__icon {
+  font-size: 2rem;
+  color: #b32734;
+  padding: 0.5rem;
+  margin-right: 0.5rem; }
+
+.sm__email {
+  margin-top: 1.5rem; }
+
+.branding {
+  display: flex; }
+
+.branding__image {
+  margin-right: 0.6rem; }
+
+@media only screen and (min-width: 1171px) {
+  html {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1170px) {
+  html {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px; }
+  .grid-wrapper {
+    grid-template-areas: 'price price' 'form form' 'benefits benefits'; } }
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px; }
+  .grid-wrapper {
+    grid-template-areas: 'price price' 'form form' 'benefits benefits'; }
+  main {
+    padding: 1rem; }
+  .mt-1 {
+    margin-top: 1rem; }
+  .grid-wrapper__inner {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    text-align: center; }
+  .price-wrapper__discount {
+    padding-left: 0;
+    box-shadow: none; }
+  .price-wrapper__block__price {
+    font-size: 2rem; }
+  h1.lg-heading {
+    font-size: 2.3rem;
+    text-align: center; }
+  .form-wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .list-wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .container-footer {
+    flex-direction: column; }
+  .footer-block__list__item {
+    margin-bottom: 2rem; } }

@@ -1,0 +1,88 @@
+// Widescreens
+@include mediaXl {
+  html {
+    font-size: 16px;
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  html {
+    font-size: 14px;
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  html {
+    font-size: 14px;
+  }
+  .grid-wrapper {
+    grid-template-areas:
+      'price price'
+      'form form'
+      'benefits benefits';
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  html {
+    font-size: 14px;
+  }
+  .grid-wrapper {
+    grid-template-areas:
+      'price price'
+      'form form'
+      'benefits benefits';
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .mt-1 {
+    margin-top: 1rem;
+  }
+
+  .grid-wrapper__inner {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    text-align: center;
+  }
+
+  .price-wrapper__discount {
+    padding-left: 0;
+    box-shadow: none;
+  }
+
+  .price-wrapper__block__price {
+    font-size: 2rem;
+  }
+
+  h1.lg-heading {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .list-wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .container-footer {
+    flex-direction: column;
+  }
+
+  .footer-block__list__item {
+    margin-bottom: 2rem;
+  }
+}
+
+@include orientLand {
+}
