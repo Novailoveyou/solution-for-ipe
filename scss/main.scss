@@ -259,6 +259,7 @@ main {
 
 .form__form-group__checkbox {
   margin-right: 0.8rem;
+  cursor: pointer;
 }
 
 .list-wrapper {
@@ -314,6 +315,7 @@ footer {
 
 .footer-block__list__item {
   margin-bottom: 0.3rem;
+  cursor: pointer;
 }
 
 .sm__icon {
@@ -321,10 +323,12 @@ footer {
   color: $secondary-color;
   padding: 0.5rem;
   margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 .sm__email {
-  margin-top: 1.5rem;
+  margin-top: 18.62px;
+  margin-bottom: 18.62px;
 }
 
 .branding {
