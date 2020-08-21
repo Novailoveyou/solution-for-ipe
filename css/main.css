@@ -219,7 +219,8 @@ main {
   flex-direction: row; }
 
 .form__form-group__checkbox {
-  margin-right: 0.8rem; }
+  margin-right: 0.8rem;
+  cursor: pointer; }
 
 .list-wrapper {
   padding-top: 2rem;
@@ -262,16 +263,19 @@ footer {
   padding-left: 1.5rem; }
 
 .footer-block__list__item {
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  cursor: pointer; }
 
 .sm__icon {
   font-size: 2rem;
   color: #b32734;
   padding: 0.5rem;
-  margin-right: 0.5rem; }
+  margin-right: 0.5rem;
+  cursor: pointer; }
 
 .sm__email {
-  margin-top: 1.5rem; }
+  margin-top: 18.62px;
+  margin-bottom: 18.62px; }
 
 .branding {
   display: flex; }
@@ -323,4 +327,4 @@ footer {
   .container-footer {
     flex-direction: column; }
   .footer-block__list__item {
-    margin-bottom: 2rem; } }
+    margin-bottom: 18.62px; } }
