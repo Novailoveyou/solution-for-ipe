@@ -1,3 +1,13 @@
+textarea,
+input.text,
+input[type='text'],
+input[type='button'],
+input[type='submit'],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+  opacity: 1; }
+
 * {
   box-sizing: border-box; }
 
@@ -183,7 +193,9 @@ main {
   font-size: 1.5rem;
   box-shadow: none;
   border: none;
-  margin-top: 0.2rem; }
+  margin-top: 0.2rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem; }
 
 .form-group__label {
   font-size: 0.9375rem; }
@@ -197,7 +209,8 @@ main {
   color: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 0.9375rem; }
+  font-size: 0.9375rem;
+  cursor: pointer; }
 
 .form-group__text-label {
   font-size: 0.75rem; }
@@ -244,8 +257,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center; }
-  .container-footer:last-child {
-    margin-right: 0; }
 
 .footer-block__list {
   padding-left: 1.5rem; }
@@ -307,8 +318,8 @@ footer {
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
   .list-wrapper {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; }
+    padding-left: 1rem;
+    padding-right: 1rem; }
   .container-footer {
     flex-direction: column; }
   .footer-block__list__item {
