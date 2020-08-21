@@ -200,40 +200,39 @@
                 name="device-track"
                 value="err"
               />
+
               <input id="ip-track" type="hidden" name="ip-track" value="err" />
 
               <input
                 id="utm_source"
                 type="hidden"
                 name="utm_source"
-                value="err"
+                value=""
               />
               <input
                 id="utm_medium"
                 type="hidden"
                 name="utm_medium"
-                value="err"
+                value=""
               />
               <input
                 id="utm_campaign"
                 type="hidden"
                 name="utm_campaign"
-                value="err"
+                value=""
               />
               <input
                 id="utm_content"
                 type="hidden"
                 name="utm_content"
-                value="err"
+                value=""
               />
-              <input id="utm_term" type="hidden" name="utm_term" value="err" />
+              <input id="utm_term" type="hidden" name="utm_term" value="" />
             </form>
           </div>
           <div class="grid-wrapper__inner list-wrapper">
             <h3>
-              <span class="text-bold text-underline"
-                >В стоимость включено:</span
-              >
+              <span class="text-bold">В стоимость включено:</span>
             </h3>
             <ul class="list-wrapper__list">
               <li class="list-wrapper__list__item">
@@ -327,6 +326,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- UTM -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.mjs"
+    ></script>
 
     <script src="js/main.js"></script>
   </body>
